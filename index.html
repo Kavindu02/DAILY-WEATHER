@@ -199,9 +199,16 @@ body{
   </div>
 </div>
 
-<footer class="footer">
-  <p>© 2025 <strong>Daily Weather</strong> | All Rights Reserved.</p>
+<footer id="footer" class="footer light-background text-center py-3">
+  <p>© <span id="year"></span> <strong>Daily Weather</strong> | All Rights Reserved.</p>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="config.js"></script>
